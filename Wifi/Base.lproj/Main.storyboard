@@ -28,16 +28,31 @@
                                     <action selector="didTapCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VK5-xd-lbW"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noconnection" translatesAutoresizingMaskIntoConstraints="NO" id="Igj-TJ-AQd">
+                                <rect key="frame" x="162" y="260" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Gmm-8a-LBr"/>
+                                    <constraint firstAttribute="height" constant="50" id="jus-Yb-voc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rd4-TH-3sq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S6K-l9-QjD"/>
                             <constraint firstItem="rd4-TH-3sq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TS7-WN-pny"/>
+                            <constraint firstItem="rd4-TH-3sq" firstAttribute="top" secondItem="Igj-TJ-AQd" secondAttribute="bottom" constant="8" id="f03-F0-xhl"/>
+                            <constraint firstItem="Igj-TJ-AQd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sPe-7L-7Aq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="Igj-TJ-AQd" id="EmA-Sy-fTU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="noconnection" width="50" height="50"/>
+    </resources>
 </document>
